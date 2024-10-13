@@ -1,0 +1,65 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Lao:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Noto Sans Lao', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.noto-sans-lao-unique {
+  font-family: "Noto Sans Lao", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400; /* Change this value to 100, 400, or 700 as needed */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* Custom Styles */
+.bg-primary {
+  background-color: #388E3C; /* Primary */
+}
+
+.bg-secondary {
+  background-color: #1976D2; /* Secondary */
+}
+
+.bg-accent {
+  background-color: #FFD54F; /* Accent */
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-primary text-white hover:bg-accent; /* Button styling */
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white; /* Button styling */
+}
+
+.btn-accent {
+  @apply bg-accent text-white; /* Button styling */
+}
+
+/* Sidebar and Navbar */
+.sidebar {
+  @apply bg-secondary text-white; /* Sidebar */
+}
+
+.navbar {
+  @apply bg-secondary text-white; /* Navbar */
+}
+
+/* Form Inputs */
+input, select, textarea {
+  border-color: #ddd; /* Light gray border for inputs */
+}
+
+/* Success Notification */
+.success {
+  @apply bg-accent text-white; /* Success message styling */
+}
+body {
+  @apply font-sans; /* This applies the default sans font */
+}

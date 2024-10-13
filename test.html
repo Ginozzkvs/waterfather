@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact 5-Field & Date Form</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            transition: all 0.3s ease-in-out;
+        }
+        .form-container:hover {
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #3e3ead;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+        }
+        .form-group label {
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: bold;
+        }
+        .form-group input {
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+        .form-group input:focus {
+            border-color: #3e3ead;
+            outline: none;
+        }
+        .form-group input[type="date"] {
+            color: #555;
+        }
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: #088106;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group button:hover {
+            background-color: #066a05;
+        }
+        .form-group:last-child {
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Compact 5-Field & Date Form</h2>
+    <form>
+        <!-- Row 1: Field 1 and Date 1 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="field1">Field 1</label>
+                <input type="text" id="field1" name="field1" placeholder="Enter data for field 1" required>
+            </div>
+            <div class="form-group">
+                <label for="date1">Date 1</label>
+                <input type="date" id="date1" name="date1" required>
+            </div>
+        </div>
+
+        <!-- Row 2: Field 2 and Date 2 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="field2">Field 2</label>
+                <input type="text" id="field2" name="field2" placeholder="Enter data for field 2" required>
+            </div>
+            <div class="form-group">
+                <label for="date2">Date 2</label>
+                <input type="date" id="date2" name="date2" required>
+            </div>
+        </div>
+
+        <!-- Row 3: Field 3 and Date 3 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="field3">Field 3</label>
+                <input type="text" id="field3" name="field3" placeholder="Enter data for field 3" required>
+            </div>
+            <div class="form-group">
+                <label for="date3">Date 3</label>
+                <input type="date" id="date3" name="date3" required>
+            </div>
+        </div>
+
+        <!-- Row 4: Field 4 and Date 4 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="field4">Field 4</label>
+                <input type="text" id="field4" name="field4" placeholder="Enter data for field 4" required>
+            </div>
+            <div class="form-group">
+                <label for="date4">Date 4</label>
+                <input type="date" id="date4" name="date4" required>
+            </div>
+        </div>
+
+        <!-- Row 5: Field 5 and Date 5 -->
+        <div class="form-row">
+            <div class="form-group">
+                <label for="field5">Field 5</label>
+                <input type="text" id="field5" name="field5" placeholder="Enter data for field 5" required>
+            </div>
+            <div class="form-group">
+                <label for="date5">Date 5</label>
+                <input type="date" id="date5" name="date5" required>
+            </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
